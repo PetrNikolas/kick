@@ -1,8 +1,6 @@
 development:
   dialect: postgres
   database: kick_development
-  user: postgres
-  password: postgres
   host: 127.0.0.1
   pool: 5
 
