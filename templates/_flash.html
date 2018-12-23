@@ -1,10 +1,10 @@
-<div class="row">
-  <div class="col-md-12">
+<div class="columns">
+  <div class="column col-xs-12">
     <%= for (k, messages) in flash { %>
       <%= for (msg) in messages { %>
-        <div class="alert alert-<%= k %>" role="alert">
+        <div class="toast toast-<%= k %>" role="alert">
           <%= msg %>
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <button type="button" class="close btn" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
