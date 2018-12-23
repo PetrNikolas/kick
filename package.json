@@ -1,7 +1,6 @@
 {
   "name": "kick",
   "version": "0.0.1",
-  "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "popper.js": "^1.14.4",
