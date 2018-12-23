@@ -1,6 +1,6 @@
 # Welcome to Kick
 
-Starter kit for web applications in GO!
+Simple starter kit for web applications in GO!
 
 * Version 0.0.1
 
