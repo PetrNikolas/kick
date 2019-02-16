@@ -7,14 +7,14 @@ Simple starter kit for web applications in GO!
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [Database Setup](database-etup)
-* [Starting the Application](starting-the-application)
+* [Database Setup](#database-setup)
+* [Starting the Application](#starting-the-application)
 
 ## Prerequisites
 
 * [GO Lang](https://golang.org/)
 * [Buffalo](https://gobuffalo.io/en)
-* [PostgreSQL](https://www.postgresql.org/docs/)
+* [Postgres](https://www.postgresql.org/docs/)
 
 ## Database Setup
 
