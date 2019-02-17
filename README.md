@@ -1,22 +1,26 @@
 # Welcome to Kick
 
-Simple starter kit for web applications in GO!
+!!Warning: EXPERIMENTAL!!
 
-* Version 0.0.1
+Full-stack solutions starter kit for web hipsters!
+
+* Version 0.0.2
 
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [Database Setup](#database-setup)
-* [Starting the Application](#starting-the-application)
+* [Server Setup](#server-setup)
 
 ## Prerequisites
 
+### For server (Golang application)
 * [GO Lang](https://golang.org/)
 * [Buffalo](https://gobuffalo.io/en)
 * [Postgres](https://www.postgresql.org/docs/)
 
-## Database Setup
+## Server setup
+
+### Database Setup
 
 It looks like you chose to set up your application using a postgres database! Fantastic!
 
@@ -24,13 +28,13 @@ The first thing you need to do is open up the "database.yml" file and edit it to
 
 You will also need to make sure that **you** start/install the database of your choice. Buffalo **won't** install and start postgres for you.
 
-### Create Your Databases
+#### Create Your Databases
 
 Ok, so you've edited the "database.yml" file and started postgres, now Buffalo can create the databases in that file for you:
 
 `buffalo db create -a`
 
-## Starting the Application
+### Starting the Application
 
 Buffalo ships with a command that will watch your application and automatically rebuild the Go binary and any assets for you. To do that run the "buffalo dev" command:
 
@@ -38,10 +42,6 @@ Buffalo ships with a command that will watch your application and automatically 
 
 If you point your browser to [http://127.0.0.1:3000](http://127.0.0.1:3000) you should see a "Welcome to Buffalo!" page.
 
-### Build application
+#### Build application
 
 `buffalo build`
-
-**Congratulations!** You now have your Buffalo application up and running.
-
-Good luck!
