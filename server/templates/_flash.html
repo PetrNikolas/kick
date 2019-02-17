@@ -1,0 +1,14 @@
+<div class="columns">
+  <div class="column col-xs-12">
+    <%= for (k, messages) in flash { %>
+      <%= for (msg) in messages { %>
+        <div class="toast toast-<%= k %>" role="alert">
+          <%= msg %>
+          <button type="button" class="close btn" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <% } %>
+    <% } %>
+  </div>
+</div>

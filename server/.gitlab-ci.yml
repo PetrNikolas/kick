@@ -1,0 +1,33 @@
+before_script:
+  - apt-get update && apt-get install -y postgresql-client
+  - ln -s /builds /go/src/$(echo "github.com/petrnikolasprokop/kick" | cut -d "/" -f1)
+  - cd /go/src/github.com/petrnikolasprokop/kick
+  - mkdir -p public/assets
+  - go get -u github.com/gobuffalo/buffalo/buffalo
+  - go get -t -v ./...
+  - export PATH="$PATH:$GOPATH/bin"
+
+stages:
+  - test
+
+.test-vars: &test-vars
+  variables:
+    GO_ENV: "test"
+    POSTGRES_DB: "kick_test"
+    TEST_DATABASE_URL: "postgres://postgres:postgres@postgres:5432/kick_test?sslmode=disable"
+
+# Golang version choice helper
+.use-golang-image: &use-golang-latest
+  image: golang:latest
+
+.use-golang-image: &use-golang-1-8
+  image: golang:1.8
+
+test:
+  <<: *use-golang-latest
+  <<: *test-vars
+  stage: test
+  services:
+    - postgres:latest
+  script:
+    - buffalo test
