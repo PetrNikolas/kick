@@ -5,7 +5,7 @@ FROM gobuffalo/buffalo:v0.13.7 as builder
 RUN mkdir -p $GOPATH/src/github.com/petrnikolasprokop/kick
 WORKDIR $GOPATH/src/github.com/petrnikolasprokop/kick
 
-# this will cache the npm install step, unless package.json changes
+# This will cache the npm install step, unless package.json changes
 ADD package.json .
 ADD yarn.lock .
 RUN yarn install --no-progress

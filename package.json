@@ -1,7 +1,11 @@
 {
   "name": "kick",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
+  "scripts": {
+    "build": "buffalo build",
+    "dev": "buffalo dev"
+  },
   "dependencies": {
     "popper.js": "^1.14.4",
     "spectre.css": "^0.5.8"

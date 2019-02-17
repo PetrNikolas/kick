@@ -6,12 +6,9 @@ import (
 	"github.com/petrnikolasprokop/kick/actions"
 )
 
-// main is the starting point for your Buffalo application.
-// You can feel free and add to this `main` method, change
-// what it does, etc...
-// All we ask is that, at some point, you make sure to
-// call `app.Serve()`, unless you don't want to start your
-// application that is. :)
+// Main is the starting point for your Buffalo application.
+// You can feel free and add to this `main` method, change what it does, etc...
+// All we ask is that, at some point, you make sure to call `app.Serve()`, unless you don't want to start your application that is. :)
 func main() {
 	app := actions.App()
 	if err := app.Serve(); err != nil {
@@ -34,5 +31,4 @@ When `buffalo build` is run to compile your binary, this `main`
 function will be at the heart of that binary. It is expected
 that your `main` function will start your application using
 the `app.Serve()` method.
-
 */
