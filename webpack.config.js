@@ -1,6 +1,5 @@
 const Webpack = require("webpack");
 const Glob = require("glob");
-const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ManifestPlugin = require("webpack-manifest-plugin");
@@ -10,7 +9,7 @@ const LiveReloadPlugin = require('webpack-livereload-plugin');
 
 const configurator = {
   entries: function(){
-    var entries = {
+    const entries = {
       application: [
         './assets/css/application.scss',
       ],
@@ -37,7 +36,7 @@ const configurator = {
   },
 
   plugins() {
-    var plugins = [
+    const plugins = [
       new CleanObsoleteChunks(),
       // new Webpack.ProvidePlugin(),
       new MiniCssExtractPlugin({filename: "[name].[contenthash].css"}),
@@ -72,7 +71,7 @@ const configurator = {
   buildConfig: function(){
     const env = process.env.NODE_ENV || "development";
 
-    var config = {
+    const config = {
       mode: env,
       entry: configurator.entries(),
       output: {filename: "[name].[hash].js", path: `${__dirname}/public/assets`},
