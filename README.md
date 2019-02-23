@@ -14,10 +14,11 @@ Full-stack solutions starter kit for web hipsters!
 
 ## Prerequisites
 
-### For server (Golang application)
+### Web app (Golang application)
 * [GO Lang](https://golang.org/)
 * [Buffalo](https://gobuffalo.io/en)
 * [Postgres](https://www.postgresql.org/docs/)
+* [Webpack](https://webpack.js.org/)
 
 ## Features
 
