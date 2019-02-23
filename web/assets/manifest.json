@@ -1,0 +1,9 @@
+{
+    "name": "Kick",
+    "short_name": "Kick",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#000"
+}

@@ -9,6 +9,7 @@ Full-stack solutions starter kit for web hipsters!
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
+* [Features](#features)
 * [Web Setup](#web-project)
 
 ## Prerequisites
@@ -17,6 +18,10 @@ Full-stack solutions starter kit for web hipsters!
 * [GO Lang](https://golang.org/)
 * [Buffalo](https://gobuffalo.io/en)
 * [Postgres](https://www.postgresql.org/docs/)
+
+## Features
+
+* Service worker support
 
 ## Web project
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -16,6 +16,7 @@
     <meta name="reply-to" content="hello@petrnikolas.com" />
     <meta name="url" content="" />
     <meta name="identifier-URL" content="" />
+    <link rel="manifest" href="<%= assetPath("manifest.json") %>">
 
     <!-- OG Meta tags -->
     <meta property="og:title" content="Kick" />
@@ -43,9 +44,12 @@
       <%= partial("flash.html") %>
       <%= partial("header.html") %>
 
-      <%= yield %>
+      <main>
+        <%= yield %>
+      </main>
     </div>
 
     <%= javascriptTag("application.js") %>
+    <script>if (window.location.host !== 'localhost:3000') "serviceWorker"in navigator&&navigator.serviceWorker.register("/assets/sw.js").then(function(){console.log("Service Worker Registered")});</script>
   </body>
 </html>
