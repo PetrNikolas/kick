@@ -11,7 +11,7 @@ import (
 	csrf "github.com/gobuffalo/mw-csrf"
 	i18n "github.com/gobuffalo/mw-i18n"
 	"github.com/gobuffalo/packr"
-	"github.com/petrnikolasprokop/kick/server/models"
+	"github.com/petrnikolasprokop/kick/web/models"
 )
 
 // ENV is used to help switch settings based on where the

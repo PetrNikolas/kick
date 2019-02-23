@@ -1,9 +1,9 @@
 {
   "name": "kick",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "scripts": {
-    "server:build": "cd server && buffalo build",
-    "server:dev": "cd server && buffalo dev"
+    "web:build": "cd web && buffalo build",
+    "web:dev": "cd web && buffalo dev"
   }
 }

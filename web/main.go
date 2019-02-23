@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/petrnikolasprokop/kick/server/actions"
+	"github.com/petrnikolasprokop/kick/web/actions"
 )
 
 // Main is the starting point for your Buffalo application.
