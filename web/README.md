@@ -1,18 +1,9 @@
-# Kick server
-
-Server app.
+# Kick web app
 
 ## Table of Contents
 
-* [Prerequisites](#prerequisites)
 * [Database Setup](#database-setup)
 * [Starting the Application](#starting-the-application)
-
-## Prerequisites
-
-* [GO Lang](https://golang.org/)
-* [Buffalo](https://gobuffalo.io/en)
-* [Postgres](https://www.postgresql.org/docs/)
 
 ## Database Setup
 
